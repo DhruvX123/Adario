@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photography — Adario The Studio</title>
+<meta name="description" content="Browse wedding, event, commercial, fashion and family photography by Adario The Studio.">
+<link rel="icon" href="images/adario.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-grid">
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="photography.html" aria-current="page">Photography</a></li>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html" class="brand">
+      <img src="images/Asset.png" alt="Adario The Studio logo">
+    </a>
+
+    <div class="header-actions">
+      <a href="contact.html" class="nav-cta">Enquire</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-banner">
+    <svg class="star-bg" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/>
+    </svg>
+    <div class="container">
+      <span class="eyebrow">
+        <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+        Portfolio
+      </span>
+      <h1>Photography</h1>
+      <p class="lede">Weddings, events, commercial work, fashion editorials and family sessions — filter by category to browse.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter portfolio by category">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="fashion">Fashion</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+      </div>
+
+      <!--
+        TO REPLACE A PLACEHOLDER WITH A REAL PHOTO:
+        Change this:
+          <a class="tile" href="#" data-category="wedding">
+            <div class="tile-placeholder"> ... </div>
+          </a>
+        To this:
+          <a class="tile" href="#" data-category="wedding">
+            <img src="https://drive.google.com/file/d/1A7l1BugqzkBeiiWf5R4izFSe6W9--pbQ/view?usp=sharing" alt="Describe the photo">
+          </a>
+      -->
+
+      <div class="portfolio-grid is-wide reveal" id="portfolioGrid">
+
+        <a class="tile" href="#" data-category="wedding">
+            <img src="https://www.instagram.com/p/DaVfyaBDrhh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" alt="Describe the photo">
+          </a>
+        <a class="tile" href="#" data-category="fashion">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Fashion</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="commercial">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Commercial</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="family">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Family</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="events">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Events</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="wedding">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Wedding</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="commercial">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Commercial</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="fashion">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Fashion</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="events">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Events</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="family">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Family</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="wedding">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Wedding</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+        <a class="tile" href="#" data-category="commercial">
+          <div class="tile-placeholder">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+            <span class="cat">Commercial</span><span class="hint">Add photo</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container reveal">
+      <span class="eyebrow" style="color: var(--ink-900);">
+        <svg class="star" viewBox="0 0 100 100" aria-hidden="true" style="fill:var(--ink-900);"><path d="M 50.0,2.0 L 56.51,34.29 L 83.94,16.06 L 65.71,43.49 L 98.0,50.0 L 65.71,56.51 L 83.94,83.94 L 56.51,65.71 L 50.0,98.0 L 43.49,65.71 L 16.06,83.94 L 34.29,56.51 L 2.0,50.0 L 34.29,43.49 L 16.06,16.06 L 43.49,34.29 Z"/></svg>
+        Like What You See?
+      </span>
+      <h2>Let's plan your shoot</h2>
+      <p class="lede">Tell us your date and what you need — we'll take it from there.</p>
+      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/Asset.png" alt="Adario The Studio">
+        <p>Wedding, event, commercial, fashion and family photography &amp; films — crafted with intention, shot to be felt.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <ul>
+          <li><a href="tel:+919111782104">+91 91117 82104</a></li>
+          <li><a href="mailto:adariothestudio@gmail.com">adariothestudio@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/adariothestudio/" target="_blank" rel="noopener">@adariothestudio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Adario The Studio. All rights reserved.</span>
+      <span>Site by @Dhruv</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
